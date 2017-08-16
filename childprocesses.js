@@ -60,7 +60,9 @@ child2.on('data', (data) => {
     log(`Number of files in downloads ${data}`)
 })
 
-const spawnCmd = `curl -u 'cbroberg':231ffdfef9a0207683c7952819255c90787d9f1b https://api.github.com/user/repos -d "{"name":"cb_demo"}"`
+const githubToken = 'XXXXX'
+
+const spawnCmd = `curl -u 'cbroberg':${githubTojen} https://api.github.com/user/repos -d "{"name":"cb_demo"}"`
 
 const child3 = spawn(spawnCmd, {
     stdio: 'inherit',
@@ -70,5 +72,3 @@ const child3 = spawn(spawnCmd, {
 child3.on('data', (data) => {
     log(`Returned from curl: ${data}`)
 })
-
-// curl -u 'cbroberg':231ffdfef9a0207683c7952819255c90787d9f1b https://api.github.com/user/repos -d "{\"name\":\"$project_name\"}" > /dev/null
