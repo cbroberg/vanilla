@@ -1,0 +1,38 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "arrowFunctions": true
+        },
+        "sourceType": "module"
+    },
+    
+    "rules": {
+        "no-const-assign": "warn",
+        "no-useless-concat":"off",
+        "no-this-before-super": "warn",
+        "no-undef": "warn",
+        "no-unreachable": "warn",
+        /*"no-unused-vars": "warn",*/
+        "impliedStrict": 0,
+        
+        "allowShortCircuit": 0, 
+        "allowTernary": 0,
+        "radix": "off", /* when using parseInt('') */
+
+        "constructor-super": "warn",
+        "valid-typeof": "warn",
+        "semi": ["error", "never"],
+
+        "react/display-name": 0
+    },
+       "extends": [
+        "react-app"
+    ]
+}

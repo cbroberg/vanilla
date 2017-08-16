@@ -1,0 +1,9 @@
+{
+    "name": "clean",
+    "version": "1.0.0",
+    "description": "Node Modules Experiments",
+    "author": "Christian Broberg",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {}
+}
