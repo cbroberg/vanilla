@@ -33,12 +33,17 @@ let pause = () => {
 })    
 }
 
+function abort() {
+	throw new Error('This is not an error. This is just to abort javascript executing')
+}
+
 module.exports = {
     cls: cls,
     log: log,
     sleep: sleep,
     write: write,
     nx: nx,
-    pause: pause
+	pause: pause,
+	abort: abort
 }
 
