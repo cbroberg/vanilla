@@ -37,11 +37,20 @@ log(addNumbersInArray(numbers)) // 55
 log(addNumbersInArray(moreNumbers)) // 135
 let bigNumbers = numbers.concat(moreNumbers)
 log(addNumbersInArray(bigNumbers)) // 190
+let hugeNumbers = [...moreNumbers, ...bigNumbers] // using spread as alternative to concat
+log(addNumbersInArray(hugeNumbers)) // 325
 
 // Copy arrays
 let numbersCopied = [...numbers] // like numbers.slice()
 numbersCopied.push(11)
 log(numbersCopied)
 
-// Rest operator condenses multiple elements into an array
+// Rest operator condenses multiple elements into an array, the opposite of spread (expands)
+let multiply = (multiplier, ...theArgs) => {
+	return theArgs.map((element) => {
+		return multiplier * element
+	})
+}
 
+let arr = multiply(2, 1, 2, 3, 4, 5)
+log(arr) // [2, 4, 6, 8, 10]
