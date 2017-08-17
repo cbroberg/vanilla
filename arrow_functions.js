@@ -82,19 +82,6 @@ function Person() {
 
 var p = new Person()
 
+// Returning object literals needs to be in parenthesis ()
+let func = () => ({ foo: 1 })
 
-
-
-
-
-
-
-
-
-
-/*
-if (typeof(log(cls())) === 'undefined') { // undefined
-    log('UNDEFINED ... and now to something else!')
-}  
-
-*/
