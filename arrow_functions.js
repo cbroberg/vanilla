@@ -1,5 +1,6 @@
 const cls = require('./services/lib').cls
 const log = require('./services/lib').log
+const abort = require('./services/lib').abort
 
 cls()
 
@@ -59,15 +60,27 @@ let materialsLength1 = materials.map((material) => {
 	return material.length
 })
 
-let materialsLength2 = materials.map((material) => material.lenght)
+let materialsLength2 = materials.map(material => material.length)
 
 log(materialsLength1)
 log(materialsLength2)
 
+// No binding of "this", so the example actually does what we think it does, it is incrementing this.age every second
 
+function Person() {
+	this.age = 0
 
+	setInterval(() => {
+		this.age++
+		log(this.age)
+		if (this.age === 10) {
+			log(`Now age is 10 so let's get out of here`)
+			abort()
+		}
+	}, 100)
+}
 
-
+var p = new Person()
 
 
 
