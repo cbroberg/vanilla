@@ -40,6 +40,7 @@ let stringOne = 'JavaScript is the new superpower '
 let stringTwo = 'React is superpowers with views '
 let stringThree = ''
 let stringFour = '       SIGN UP HERE!      '
+let stringFive = 'assignment_turned_in'
 
 log(stringOne.charAt(0)) // J
 log(stringOne.charCodeAt(0)) // unicode number 74
@@ -51,6 +52,7 @@ log(stringOne.endsWith('power ')) // true
 log(String.fromCharCode(74)) // J
 log(stringTwo.includes('super')) // true
 log(stringTwo.indexOf('super')) // 9
+log(stringOne.indexOf('_')) // 43
 log(stringThree.lastIndexOf('super')) // 42
 log(stringThree.charAt(stringThree.lastIndexOf('super'))) // s
 log(stringThree.match(/super/g)) // [ 'super', 'super' ]
@@ -59,6 +61,7 @@ log(stringThree.replace(/super/g, 'SUPER'))
 log(stringOne.search('power')) // 27
 log(stringOne.slice(4, 10)) // Script
 log(stringThree.split(' '))
+log(stringFive.split('_')) // [ 'assignment', 'turned', 'in']
 log(stringOne.startsWith('Java')) // true
 log(stringOne.substr(0, 4)) // Java
 log(stringOne.substring(4, 10)) // Script

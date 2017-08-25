@@ -20,5 +20,5 @@ if (myObject.hasOwnProperty('name')) {
 log('name' in myObject) // true
 
 log(myObject.hasOwnProperty('valueOf')) // false
-log('valueOf' in myObject) // valueOf prototype property - true
 
+log('valueOf' in myObject) // valueOf prototype property - true
