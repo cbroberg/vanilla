@@ -34,4 +34,4 @@ var firstCheck = false,
     secondCheck = false,
     access = firstCheck ? 'Access denied' : secondCheck ? 'Access denied' : 'Access granted'
 
-log(access)
+log(access) // Access granted
