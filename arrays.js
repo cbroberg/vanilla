@@ -52,10 +52,10 @@ log(arr1)
 arr1.unshift('a') // ['a', 'b', 'c', 'd', 'e', 'f']
 log(arr1)
 log(arr1.slice(1, 3)) // ['b', 'c']
-arr1.push('z')
-arr1.push('k')
-arr1.push('l')
-arr1.push('y')
+arr1.push('g')
+arr1.push('h')
+arr1.push('i')
+arr1.push('j')
 log(arr1.sort(arr1))
 
 log(arr1.splice(2, 2, 'JS rules')) // [ 'c', 'd' ]
@@ -67,3 +67,22 @@ const sum = numbers.reduce((result, item) => {
     return result + item
 }, 0)
 log(sum)
+
+// First state mutation
+let state = {	
+	model: [{
+		email: 'mhk@webhouse.dk',
+		password: '12349876'
+	}]
+}
+
+log(state)
+
+state.model.push({ email: 'cb@webhouse.dk', password: '12345678'})
+log(state)
+
+state.model.push({ email: 'mb@webhouse.dk', password: '87654321' })
+log(state)
+
+state.model.push({ email: 'hh@webhouse.dk', password: '19283746' })
+log(state)

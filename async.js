@@ -84,7 +84,7 @@ var getPeople = (async () => {
     }
 })()
 
-getPeople.then( (result) => {
+getPeople.then((result) => {
     let characters = result.map(character => character.name)
     for (let index in result) {
         log(characters[index]) // prints all characters in array
