@@ -82,3 +82,4 @@ var getWeekNumber = function(date) {
 }
 
 log(getWeekNumber(new Date()))
+
