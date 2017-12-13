@@ -25,5 +25,12 @@ log('')
 log('30-03-2017: ', isValidDate(30, 3, 2017)) // March 30, 2017 - true
 log('29-02-2017: ', isValidDate(29, 2, 2017)) // February 29, 2017 - false
 log('29-02-2016: ', isValidDate(29, 2, 2016)) // February 29, 2016 - true
-log('30-03-2017: ', isValidDate(30, 13, 2017)) // Nomonth 30, 2017 - false
+log('30-13-2017: ', isValidDate(30, 13, 2017)) // Nomonth 30, 2017 - false
 
+var dateString = "23-10-2015" // Oct 23
+
+var dateParts = dateString.split("-")
+
+var dateObject = new Date(dateParts[2], dateParts[1] - 1, dateParts[0]) // month is 0-based
+
+console.log(dateObject)
