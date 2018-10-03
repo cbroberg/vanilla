@@ -26,6 +26,7 @@
         "isomorphic-fetch": "^2.2.1",
         "lodash": "^4.17.11",
         "os": "^0.1.1",
+        "puppeteer": "^1.8.0",
         "read-package-json": "^2.0.5",
         "registry-auth-token": "^3.3.1",
         "request": "^2.81.0",
