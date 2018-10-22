@@ -38,3 +38,9 @@ formatDate('08/11/2016', {
 })
 
 log('', formatDate('02-29-2016'))
+
+let d = "22-10-2018 23:29"
+let dArr = d.split('-')
+let ts = new Date(dArr[1] + "-" + dArr[0] + "-" + dArr[2]).getTime() // 1379392680000
+
+console.log(ts)

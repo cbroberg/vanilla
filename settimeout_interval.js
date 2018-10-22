@@ -28,7 +28,8 @@ function counter() {
     log(++count)
 }
 
-let byebye = () => {
-    log('Bye Bye')
+function scheduledUpdate() {
+	console.log('Updating at a specific timeout ')
 }
 
+setTimeout(scheduledUpdate, 5000)

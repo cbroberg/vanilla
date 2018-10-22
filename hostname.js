@@ -1,5 +1,10 @@
 var os = require("os")
-var hostname = os.hostname()
+
+const hostname = os.hostname()
+const platform = os.platform()
 
 console.log(hostname)
+console.log(platform)
+
+
 
