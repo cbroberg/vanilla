@@ -28,8 +28,15 @@ function counter() {
     log(++count)
 }
 
-function scheduledUpdate() {
-	console.log('Updating at a specific timeout ')
+const scheduledUpdate = async () => {
+	// Here is where the real update executes
+	console.log('Now updating ... please wait!')
 }
 
-setTimeout(scheduledUpdate, 5000)
+const update = async (when) => {
+	console.log('Update will start in', when, 'seconds')
+	await setTimeout(scheduledUpdate, (when * 1000))
+}
+
+// update(5).then((res) =>	console.log(res))
+update(5)
