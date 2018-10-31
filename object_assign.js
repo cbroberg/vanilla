@@ -3,17 +3,17 @@ const log = require('./services/lib').log
 
 cls()
 
-const object1 = {
-	a: 1,
-	b: 2,
-	c: 3
+const will = {
+	topic: undefined,
+	payload: JSON.stringify({ status: 'offline (dead)' }),
+	qos: 1,
+	retain: true
 }
+	
+will.topic = 'senti/services/watchman/watchman-cb-air/status'
 
-const object2 = Object.assign({ c: 4, d: 5 }, object1)
+const newWill = Object.assign({ topic: 'senti/services/watchman/watchman-cb-air/status' }, will)
 
-console.log(object2.c, object2.d)
-console.log(object1)
-console.log(object2)
-
-// expected output: 3 5
+log(will)
+log(newWill)
 
