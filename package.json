@@ -35,6 +35,7 @@
         "read-package-json": "^2.0.5",
         "registry-auth-token": "^3.3.1",
         "request": "^2.81.0",
+        "sharp": "^0.21.0",
         "simple-git": "^1.105.0",
         "sorts": "^1.1.1",
         "superagent": "^3.8.3",
