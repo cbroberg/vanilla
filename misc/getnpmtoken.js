@@ -13,14 +13,9 @@ let savedToken = {
     type: ''
 }
 
-
-
 // var saveToken = (token) => {
 //     savedToken = token
 // }
-
-// getToken('https://registry.npmjs.org/', 'cbroberg', 'cb@webhouse.dk', 'amaliesbh2711', savedToken)
-// the-token
 
 // log(pkg)
 

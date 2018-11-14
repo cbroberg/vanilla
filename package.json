@@ -11,6 +11,7 @@
         "url": ""
     },
     "dependencies": {
+        "apisauce": "^1.0.0",
         "babel-eslint": "^10.0.1",
         "chalk": "^2.4.1",
         "detect-rpi": "^1.3.0",
@@ -33,6 +34,7 @@
         "read-package-json": "^2.0.13",
         "registry-auth-token": "^3.3.2",
         "request": "^2.88.0",
+        "senti-apicore": "0.0.9",
         "sharp": "^0.21.0",
         "simple-git": "^1.107.0",
         "sorts": "^1.1.1",
