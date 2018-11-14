@@ -1,20 +1,3 @@
-/**
- * Copyright 2018 Google Inc. All rights reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * @author ebidel@ (Eric Bidelman)
- */
 
 /**
  * Takes a screenshot of the latest tweet in a user's timeline and creates a
@@ -36,7 +19,7 @@
  */
 const puppeteer = require('puppeteer')
 
-const username = process.env.USERNAME || 'ebidel'
+const username = process.env.USERNAME || 'cbroberg'
 const searchable = process.argv.includes('--searchable');
 
 (async () => {
@@ -50,8 +33,8 @@ const searchable = process.argv.includes('--searchable');
 	// Can't use elementHandle.click() because it clicks the center of the element
 	// with the mouse. On tweets like https://twitter.com/ebidel/status/915996563234631680
 	// there is an embedded card link to another tweet that it clicks.
-	await page.$eval(`.tweet[data-screen-name="${username}"]`, tweet => tweet.click())
-	await page.waitForSelector('.tweet.permalink-tweet', { visible: true })
+	// await page.$eval(`.tweet[data-screen-name="${username}"]`, tweet => tweet.click())
+	// await page.waitForSelector('.tweet.permalink-tweet', { visible: true })
 
 	const overlay = await page.$('.tweet.permalink-tweet')
 	const screenshot = await overlay.screenshot({ path: 'tweet.png' })
@@ -62,7 +45,7 @@ const searchable = process.argv.includes('--searchable');
 			tweet = tweet.cloneNode(true)
 			tweet.style.width = width
 			document.body.innerHTML = `
-      <div style="display:flex;justify-content:center;align-items:center;height:100vh;">;
+      <div style="display:flex;justify-content:center;align-items:center;height:100vh;">
         ${tweet.outerHTML}
       </div>
     `
