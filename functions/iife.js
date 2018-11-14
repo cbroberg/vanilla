@@ -2,7 +2,8 @@ const cls = require('../services/lib').cls
 const log = require('../services/lib').log
 
 // Immediately-Invoked Function Expression (IIFE) (unnamed)
-// It doesn't work without adding a semicolon to the ending of the former function or expression
+// It doesn't work without adding a semicolon to the ending of the former function or expression.
+// If a module only exports one function it does not need the semicolon.
 
 cls()
 
@@ -23,13 +24,18 @@ var immediatelyInvoked = (() => {
 // Named IIFE
 (favNumber = function (num = 3) {
     log('My favorite number is ' + num)
-})();
+})()
 
 favNumber(666);
 
 (yesIDidIt = function(msg) {
     log('I actually did it and found the error ... :) ')
-})()
+})();
+
+// Unnamed IIFE
+(() => {
+
+})();
 
 
 /*eslint-enable*/
