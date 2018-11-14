@@ -1,5 +1,5 @@
-const cls = require('./services/lib').cls
-const log = require('./services/lib').log
+const cls = require('../services/lib').cls
+const log = require('../services/lib').log
 const getJSON = require('./ajax_node.js').main
 
 /*

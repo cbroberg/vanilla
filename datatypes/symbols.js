@@ -1,5 +1,5 @@
-const cls = require('./services/lib').cls
-const log = require('./services/lib').log
+const cls = require('../services/lib').cls
+const log = require('../services/lib').log
 
 // Symbols - Every symbol value returned from Symbol() is unique.  A symbol value may be used as an identifier for object properties; this is the data type's only purpose.
 // Symbols are unique

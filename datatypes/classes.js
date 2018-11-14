@@ -1,5 +1,5 @@
-const cls = require('./services/lib').cls
-const log = require('./services/lib').log
+const cls = require('../services/lib').cls
+const log = require('../services/lib').log
 
 // Classes - A class is a blueprint from in which individual objects are created
 

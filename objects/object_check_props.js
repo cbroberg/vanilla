@@ -1,5 +1,5 @@
-const cls = require('./services/lib').cls
-const log = require('./services/lib').log
+const cls = require('../services/lib').cls
+const log = require('../services/lib').log
 
 // Check if a property is in an object
 

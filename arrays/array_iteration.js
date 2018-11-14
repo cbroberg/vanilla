@@ -1,7 +1,7 @@
-const cls = require('./services/lib').cls
-const log = require('./services/lib').log
-const write = require('./services/lib').write
-const nx = require('./services/lib').nx
+const cls = require('../services/lib').cls
+const log = require('../services/lib').log
+const write = require('../services/lib').write
+const nx = require('../services/lib').nx
 
 cls()
 

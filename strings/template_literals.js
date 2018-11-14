@@ -1,5 +1,5 @@
-const cls = require('./services/lib').cls
-const log = require('./services/lib').log
+const cls = require('../services/lib').cls
+const log = require('../services/lib').log
 
 // Template Literals - strings on steroids with parser/parsing capabilities - Styled Components are built on Tagged Template Literals
 

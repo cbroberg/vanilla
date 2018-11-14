@@ -1,6 +1,6 @@
-var cls = require('./services/lib').cls
-var log = require('./services/lib').log
-var sleep = require('./services/lib').sleep
+var cls = require('../services/lib').cls
+var log = require('../services/lib').log
+var sleep = require('../services/lib').sleep
 
 cls()
 

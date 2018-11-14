@@ -1,5 +1,5 @@
-const cls = require('./services/lib').cls
-const log = require('./services/lib').log
+const cls = require('../services/lib').cls
+const log = require('../services/lib').log
 
 // Immediately-Invoked Function Expression (IIFE) (unnamed)
 // It doesn't work without adding a semicolon to the ending of the former function or expression

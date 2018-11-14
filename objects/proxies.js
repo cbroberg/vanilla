@@ -1,5 +1,5 @@
-const cls = require('./services/lib').cls
-const log = require('./services/lib').log
+const cls = require('../services/lib').cls
+const log = require('../services/lib').log
 
 // Proxies are used to define custom behaviour on the properties of the object when it's accessed 
 // Syntax: var p = new Proxy(target, handler)
