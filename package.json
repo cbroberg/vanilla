@@ -28,6 +28,7 @@
         "registry-auth-token": "^3.3.2",
         "request": "^2.88.0",
         "senti-apicore": "0.0.9",
+        "senti-rpi": "0.0.3",
         "sharp": "^0.21.0",
         "simple-git": "^1.107.0",
         "sorts": "^1.1.1",
