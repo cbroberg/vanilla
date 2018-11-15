@@ -1,0 +1,12 @@
+const pi = require('senti-rpi')
+
+console.log(pi.rpiTemp())
+// console.log(pi.rpiSerial())
+// console.log(pi.rpiVersion())
+// console.log(pi.rpiCurrentTimeAndHost())
+// console.log(pi.rpiGPUTemp())
+// console.log(pi.rpiIP())
+// console.log(pi.rpiMemoryTotal())
+// console.log(pi.rpiMemoryFree())
+// console.log(pi.rpiMemoryAvailable())
+// console.log(pi.rpiMemoryUsage())
