@@ -28,7 +28,7 @@ var deepArray = [
 ]
 
 for (let i in deepArray) {
-    for (let j in deepArray[i]) { /* LOGNHAND: let j = 0; j < deepArray[i].length; j++*/
+    for (let j in deepArray[i]) { /* LONGHAND: let j = 0; j < deepArray[i].length; j++*/
         log(deepArray[i][j])
     }
 }

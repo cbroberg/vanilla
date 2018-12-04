@@ -1,0 +1,62 @@
+[
+	{
+		"date": "02-05",
+		"name": "Kronprinsesse Mary",
+		"birthday": true
+	},
+	{
+		"date": "02-06",
+		"name": "Prinsesse Marie",
+		"birthday": true
+	},
+	{
+		"date": "04-01",
+		"name": "1. April",
+		"birthday": false
+	},
+	{
+		"date": "04-09",
+		"name": "Danmarks besættelse",
+		"birthday": false
+	},
+	{
+		"date": "04-16",
+		"name": "Dronning Margrethe II",
+		"birthday": true
+	},
+	{
+		"date": "05-01",
+		"name": "Arbejdernes kampdag",
+		"birthday": false
+	},
+	{
+		"date": "05-05",
+		"name": "Danmarks befrielse",
+		"birthday": false
+	},
+	{
+		"date": "05-26",
+		"name": "Kronprins Frederik",
+		"birthday": true
+	},
+	{
+		"date": "06-07",
+		"name": "Prins Joachim",
+		"birthday": true
+	},
+	{
+		"date": "06-15",
+		"name": "Valdemarsdag",
+		"birthday": false
+	},
+	{
+		"date": "06-15",
+		"name": "Genforeningsdag",
+		"birthday": false
+	},
+	{
+		"date": "12-13",
+		"name": "Luciadag",
+		"birthday": false
+	}
+]

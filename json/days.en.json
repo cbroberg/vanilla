@@ -1,0 +1,62 @@
+[
+	{
+		"date": "02-05",
+		"name": "Crown Princess Mary",
+		"birthday": true
+	},
+	{
+		"date": "02-06",
+		"name": "Princess Marie",
+		"birthday": true
+	},
+	{
+		"date": "04-01",
+		"name": "April Fools' Day",
+		"birthday": false
+	},
+	{
+		"date": "04-09",
+		"name": "Occupation of Denmark",
+		"birthday": false
+	},
+	{
+		"date": "04-16",
+		"name": "Queen Margrethe II",
+		"birthday": true
+	},
+	{
+		"date": "05-01",
+		"name": "International Workers' Day",
+		"birthday": false
+	},
+	{
+		"date": "05-05",
+		"name": "Liberation day",
+		"birthday": false
+	},
+	{
+		"date": "05-26",
+		"name": "Crown Prince Frederik",
+		"birthday": true
+	},
+	{
+		"date": "06-07",
+		"name": "Prince Joachim",
+		"birthday": true
+	},
+	{
+		"date": "06-15",
+		"name": "Day of Valdemar",
+		"birthday": false
+	},
+	{
+		"date": "06-15",
+		"name": "Reunion day",
+		"birthday": false
+	},
+	{
+		"date": "12-13",
+		"name": "Saint Lucy's Day",
+		"birthday": false
+	}
+]
