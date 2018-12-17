@@ -34,5 +34,14 @@ connection.query(
 	}
 )
 
+connection.query(
+	'SELECT * FROM `events` LIMIT 0, 10',
+	function (err, results, fields) {
+		console.log(err)
+		console.log(results) // results contains rows returned by server
+		// console.log(fields) // fields contains extra meta data about results, if available
+	}
+)
+
 
 connection.end()
