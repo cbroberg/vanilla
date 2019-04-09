@@ -1,0 +1,49 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+  margin: 0%;
+  font-size: 4.0rem;
+}
+
+.WebView {
+	float:left;
+}
+
+.Key {
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell;
+	font-size: 1.0rem;
+	font-weight: 300;
+	text-align: left;
+}
+
+body {
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell;
+}
+
+h1 {
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell;
+	font-size: 2.4rem
+}
+
+h2 {
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell;
+	font-size: 2.0rem
+}
+
+p {
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+
+span {
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+strong {
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell;
+	font-size: 1.6rem;
+}
