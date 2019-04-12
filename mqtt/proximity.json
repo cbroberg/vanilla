@@ -1,0 +1,20 @@
+{
+	"data": {
+		"dataRecievedfrom": "backend.sigfox.com",
+		"payload": "{data}",
+		"time": "{time}",
+		"serialnr": "{snr}",
+		"station": "{station}",
+		"lat": "{lat}",
+		"long": "{lng}",
+		"rssi": "{rssi}",
+		"seqnr": "{seqNumber}"
+	},
+	"device_id": "{device}",
+	"version": "v1",
+	"customerID": "1",
+	"location": "europe",
+	"regID": "1",
+	"deviceName": "sigfoxProximitySensor",
+	"type": "publish"
+}
