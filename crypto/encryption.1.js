@@ -1,3 +1,5 @@
+const keys = require('./loadenv')
+
 let crypto
 try {
 	crypto = require('crypto')
@@ -5,7 +7,7 @@ try {
 	console.log('crypto support is disabled!')
 }
 
-const { ENCRYPTION_KEY } = '74748073D776ECF7B6BD4AC99C18CD70' // Must be 256 bytes (32 characters)
+const { ENCRYPTION_KEY } = keys // Must be 256 bytes (32 characters)
 const IV_LENGTH = 16 // For AES, this is always 16
 //  IV = Initialization Vector
 

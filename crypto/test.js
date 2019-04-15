@@ -1,13 +1,11 @@
 let encryptionHelper = require("./encryptionhelper")
 var assert = require('assert')
 
-let story = "F34FBB464A4D3456F747"
+let story = 'F34FBB464A4D3456F747'
 let algorithm = encryptionHelper.CIPHERS.AES_128_CTR
 
-console.log("testing encryption and decryption")
-console.log("text is: " + story)
 
-encryptionHelper.getKeyAndIV("FBFBFBFBFBFBFBFB", function (data) { //using 32 byte key 
+encryptionHelper.getKeyAndIV(Buffer.from('FBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFB', 'utf8').toString('hex'), function (data) { //using 32 byte key 
 
 	console.log("got key and iv buffers")
 
