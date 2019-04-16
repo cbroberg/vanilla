@@ -1,0 +1,119 @@
+#!/bin/bash
+#chmod 700 create-senti-service
+
+clear
+
+# VARIABLES
+project_name=$1
+current_dir=`pwd`
+username='cbroberg'
+token=c55c0b5ec04e83f35aab00a99fe50df686310437
+
+# TEST FOR REQUIRED PARAMETER
+test -z $project_name && echo "Project name required as parameter" 1>&2 && exit 1
+
+# CREATING GITHUB REPOSITORY
+echo Adding project "$project_name" to https://github.com/odeum/"$project_name".git on GitHub
+echo
+echo
+
+curl -u $username:$token https://api.github.com/orgs/odeum/repos -d "{\"name\":\"$project_name\"}"
+
+# curl -u USERNAME https://api.github.com/orgs/odeum/repos -d '{"name":"NAME_OF_REPO", "description":"SOME_DESCRIPTION", "private": false, "has_issues": true, "has_projects": true, "has_wiki":false }'
+
+# CREATING PROJECT FILES FROM CREATE-REACT-APP
+clear
+
+echo Creating a fresh ODEUM App project in "$project_name" ... 
+echo
+echo
+
+yarn create react-app "$project_name"
+#> /dev/null
+
+echo New ODEUM App project installed at $current_dir/$project_name
+echo
+echo
+
+echo Changing to project directory $current_dir/$project_name
+cd $current_dir/$project_name
+echo 
+echo
+
+# REMOVING FILES
+echo Removing files not needed ... 
+rm ./src/App.css ./src/App.test.js ./src/index.css ./src/logo.svg
+echo
+echo
+
+# DOWNLOAD BOILERPLATE FILES
+echo Downloading project boilerplate files ...
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/public/favicon.ico > ./public/favicon.ico
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/public/index.html > ./public/index.html
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/public/manifest.json > ./public/manifest.json
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/public/200.html > ./public/200.html
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/.eslintignore > ./.eslintignore
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/.eslintrc.json > ./.eslintrc.json
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/.gitignore > ./.gitignore
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/.env > ./.env
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/jsconfig.json > ./jsconfig.json
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/.env.development > ./.env.development
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/.env.production > ./.env.production
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/.babelrc > ./.babelrc
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/package.json > ./package.json
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/code-of-conduct.md > ./code-of-conduct.md
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/.travis.yml > ./.travis.yml
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/src/App.js > ./src/App.js
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/src/index.js > ./src/index.js
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/src/index.css > ./src/index.css
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/src/registerServiceWorker.js > ./src/registerServiceWorker.js
+echo
+echo
+echo Finished downloading project boilerplate files ...
+echo
+echo
+
+# ADDING ADDITIONAL SOURCE DIRECTORIES AND FILES
+echo Adding additional demo source code directories and files ...
+mkdir ./src/demos
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/src/demos/FooterLabel.js > ./src/demos/FooterLabel.js
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/src/demos/greenTheme.js > ./src/demos/greenTheme.js
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/src/demos/ReactComp.js > ./src/demos/ReactComp.js
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/src/demos/RouteDemo.js > ./src/demos/RouteDemo.js
+curl -s https://raw.githubusercontent.com/cbroberg/create-project/master/src/demos/SimpleDiv.js > ./src/demos/SimpleDiv.js
+echo
+echo
+
+# INSTALLING MODULES (NODE_MODULES) AND ADDING ADDITIONAL NPM MODULES
+echo Installing NPM modules and upgrading all packages to latest versions ...
+echo
+yarn
+yarn upgrade --latest
+echo
+echo
+
+# ADD AND UPDATE GITHUB REPOSITORY
+echo Adding README.md
+echo
+echo Adding initial files and updating https://github.com/odeum/"$project_name".git on GitHub
+echo
+echo "# "$project_name"" > README.md
+echo
+echo
+
+git init
+git add -A
+git commit -m "Initial commit"
+git remote add origin https://github.com/odeum/"$project_name".git
+git push -u origin master
+echo Files added to https://github.com/odeum/"$project_name".git on GitHub
+echo
+echo
+echo Your project have been created and installed and pushed to GitHub at https://github.com/odeum/"$project_name".git
+
+# EXECUTING VISUAL STUDIO CODE AND LAUNCHING APP
+echo Starting Visual Studio Code and launching your App
+echo
+echo
+code .
+yarn start

@@ -1,14 +1,14 @@
 [Unit]
-# senti-servicename-dev.service
-Description=Senti friendlyname Service
+# senti-servicename.service
+Description=friendlyname
 Documentation=https://github.com/senti-iot/senti-servicename/blob/master/README.md
 # After=network.target
 
 [Service]
-WorkingDirectory=/srv/nodejs/senti/services/servicename/development
+WorkingDirectory=/srv/nodejs/senti/services/servicename/production
 ExecStart=/usr/bin/node server.js
-Environment=NODE_PORT=port2
-Environment=NODE_ENV=development
+Environment=NODE_PORT=3011
+Environment=NODE_ENV=production
 Type=simple
 Restart=always
 # RestartSec=1
