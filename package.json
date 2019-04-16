@@ -51,6 +51,7 @@
         "read-package-json": "^2.0.13",
         "redis": "^2.8.0",
         "registry-auth-token": "^3.3.2",
+        "replace-in-file": "^3.4.4",
         "request": "^2.88.0",
         "senti-apicore": "0.0.9",
         "senti-rpi": "0.0.3",
