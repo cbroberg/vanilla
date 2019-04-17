@@ -7,7 +7,7 @@ clear
 project_name=$1
 current_dir=`pwd`
 username='cbroberg'
-token=c55c0b5ec04e83f35aab00a99fe50df686310437
+token=SOME_TOKEN
 
 # TEST FOR REQUIRED PARAMETER
 test -z $project_name && echo "Project name required as parameter" 1>&2 && exit 1

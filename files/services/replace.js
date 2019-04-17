@@ -40,7 +40,7 @@ SYNTAX 3: ./remove-senti-service broadcaster
 
 PROCEDURE
 	Get args
-	set up GitHub repo
+	set up GitHub repo + server.js
 	Create service path + change directory ownership to deploy if needed
 	Create log path + change directory ownership to deploy if needed
 	Create key for .travis.yml
@@ -52,4 +52,6 @@ PROCEDURE
 	Replace file content
 	Rename files "mv senti-template.service senti-$servicename.service ..."
 	Copy/edit .env file with minimum value set (from server secret place to server)
+	
+	Git commit (the whole works)
 */
