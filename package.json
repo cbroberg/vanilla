@@ -16,7 +16,7 @@
         "@typescript-eslint/eslint-plugin": "^1.9.0",
         "@typescript-eslint/experimental-utils": "^1.9.0",
         "@typescript-eslint/parser": "^1.9.0",
-        "apisauce": "^1.0.0",
+        "apisauce": "^1.0.2",
         "assert": "^1.4.1",
         "babel-eslint": "^10.0.1",
         "buffer": "^5.2.1",
