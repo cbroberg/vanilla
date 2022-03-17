@@ -66,7 +66,7 @@
         "request": "^2.88.0",
         "senti-apicore": "0.0.17",
         "senti-rpi": "0.0.4",
-        "simple-git": "^1.117.0",
+        "simple-git": "^3.3.0",
         "sorts": "^1.1.1",
         "superagent": "^5.1.0",
         "tsutils": "^3.14.0",
