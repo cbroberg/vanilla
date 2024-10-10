@@ -1,6 +1,7 @@
 var os = require('os');
 var ip = '0.0.0.0';
 var ips = os.networkInterfaces();
+console.log('Checking local IP address ...')
 Object
 	.keys(ips)
 	.forEach(function (_interface) {
