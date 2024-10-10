@@ -1,0 +1,18 @@
+{
+    "name": "notifications",
+    "version": "1.0.2",
+    "description": "Notifications with JavaScript",
+    "main": "index.js",
+    "scripts": {},
+    "author": "Christian Broberg",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "http": "*",
+        "socket.io": "^4.0.1"
+    }
+}
