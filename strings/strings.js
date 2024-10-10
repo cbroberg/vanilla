@@ -103,7 +103,10 @@ function writeNext(i) {
     setTimeout(function() {
         writeNext(++i) // recursive call 
     }, 100)
+	
 }
 
 writeNext(1)
+// 
 
+log('\r')
